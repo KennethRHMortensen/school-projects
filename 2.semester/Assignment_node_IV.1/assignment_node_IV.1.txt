@@ -1,0 +1,207 @@
+> use users
+switched to db users
+
+> db.user.insert({})
+WriteResult({ "nInserted" : 1 })
+
+> db.user.find().pretty()
+{ "_id" : ObjectId("61fa7dd2a4be9e35eddc7506") }
+
+> db.user.insert({"name": "Kenneth", "email": "kenneth@kennt.dk", "phone": "27855561"})
+WriteResult({ "nInserted" : 1 })
+> db.user.insert({"name": "Sophie", "email": "sophie@valida.dk", "phone": "60133016"})
+WriteResult({ "nInserted" : 1 })
+> db.user.insert({"name": "John", "email": "john.doe@email.com", "phone": "12345678"})
+WriteResult({ "nInserted" : 1 })
+
+>  db.user.find().pretty()
+{ "_id" : ObjectId("61fa7dd2a4be9e35eddc7506") }
+{
+	"_id" : ObjectId("61fa7ed3a4be9e35eddc7507"),
+	"name" : "Kenneth",
+	"email" : "kenneth@kennt.dk",
+	"phone" : "27855561"
+}
+{
+	"_id" : ObjectId("61fa7ef3a4be9e35eddc7508"),
+	"name" : "Sophie",
+	"email" : "sophie@valida.dk",
+	"phone" : "60133016"
+}
+{
+	"_id" : ObjectId("61fa7f19a4be9e35eddc7509"),
+	"name" : "John",
+	"email" : "john.doe@email.com",
+	"phone" : "12345678"
+}
+
+> db.user.remove({_id: ObjectId("61fa7f19a4be9e35eddc7509")})
+WriteResult({ "nRemoved" : 1 })
+
+> db.user.find().pretty()
+{ "_id" : ObjectId("61fa7dd2a4be9e35eddc7506") }
+{
+	"_id" : ObjectId("61fa7ed3a4be9e35eddc7507"),
+	"name" : "Kenneth",
+	"email" : "kenneth@kennt.dk",
+	"phone" : "27855561"
+}
+{
+	"_id" : ObjectId("61fa7ef3a4be9e35eddc7508"),
+	"name" : "Sophie",
+	"email" : "sophie@valida.dk",
+	"phone" : "60133016"
+}
+
+> db.school.insert({"name": "Kenneth", "school": "IBA", "class": "dkpbw21a2"})
+WriteResult({ "nInserted" : 1 })
+> db.school.insert({"name": "Mikkel", "school": "IBA", "class": "dkpbw21a2"})
+WriteResult({ "nInserted" : 1 })
+> db.school.insert({"name": "Andrew", "school": "IBA", "class": "dkpbw21a2"})
+WriteResult({ "nInserted" : 1 })
+> db.school.insert({"name": "Rene", "school": "IBA", "class": "dkpbw21a2"})
+WriteResult({ "nInserted" : 1 })
+> db.school.insert({"name": "Morten", "school": "IBA", "class": "dkpbw21a2"})
+WriteResult({ "nInserted" : 1 })
+> db.school.insert({"name": "Dennis", "school": "IBA", "class": "dkpbw21a2"})
+WriteResult({ "nInserted" : 1 })
+> db.school.insert({"name": "Tobias", "school": "IBA", "class": "dkpbw21a2"})
+WriteResult({ "nInserted" : 1 })
+> db.school.insert({"name": "Freja", "school": "IBA", "class": "dkpbw21a2"})
+WriteResult({ "nInserted" : 1 })
+> db.school.insert({"name": "Sophie", "school": "IBA", "class": "dkpbw21a2"})
+WriteResult({ "nInserted" : 1 })
+> db.school.insert({"name": "Christine", "school": "IBA", "class": "dkpbw21a2"})
+WriteResult({ "nInserted" : 1 })
+> db.school.insert({"name": "Gudmundur", "school": "IBA", "class": "dkpbw21a2"})
+WriteResult({ "nInserted" : 1 })
+> db.school.find().pretty()
+{
+	"_id" : ObjectId("61fa864aa4be9e35eddc750a"),
+	"name" : "Kenneth",
+	"school" : "IBA",
+	"class" : "dkpbw21a2"
+}
+{
+	"_id" : ObjectId("61fa86efa4be9e35eddc750b"),
+	"name" : "Mikkel",
+	"school" : "IBA",
+	"class" : "dkpbw21a2"
+}
+{
+	"_id" : ObjectId("61fa86f4a4be9e35eddc750c"),
+	"name" : "Andrew",
+	"school" : "IBA",
+	"class" : "dkpbw21a2"
+}
+{
+	"_id" : ObjectId("61fa86f8a4be9e35eddc750d"),
+	"name" : "Rene",
+	"school" : "IBA",
+	"class" : "dkpbw21a2"
+}
+{
+	"_id" : ObjectId("61fa8700a4be9e35eddc750e"),
+	"name" : "Morten",
+	"school" : "IBA",
+	"class" : "dkpbw21a2"
+}
+{
+	"_id" : ObjectId("61fa8706a4be9e35eddc750f"),
+	"name" : "Dennis",
+	"school" : "IBA",
+	"class" : "dkpbw21a2"
+}
+{
+	"_id" : ObjectId("61fa870aa4be9e35eddc7510"),
+	"name" : "Tobias",
+	"school" : "IBA",
+	"class" : "dkpbw21a2"
+}
+{
+	"_id" : ObjectId("61fa870ea4be9e35eddc7511"),
+	"name" : "Freja",
+	"school" : "IBA",
+	"class" : "dkpbw21a2"
+}
+{
+	"_id" : ObjectId("61fa8712a4be9e35eddc7512"),
+	"name" : "Sophie",
+	"school" : "IBA",
+	"class" : "dkpbw21a2"
+}
+{
+	"_id" : ObjectId("61fa8716a4be9e35eddc7513"),
+	"name" : "Christine",
+	"school" : "IBA",
+	"class" : "dkpbw21a2"
+}
+{
+	"_id" : ObjectId("61fa871ba4be9e35eddc7514"),
+	"name" : "Gudmundur",
+	"school" : "IBA",
+	"class" : "dkpbw21a2"
+}
+
+
+> db.school.remove({_id: ObjectId("61fa871ba4be9e35eddc7514")})
+WriteResult({ "nRemoved" : 1 })
+
+> db.school.remove({_id: ObjectId("61fa8716a4be9e35eddc7513")})
+WriteResult({ "nRemoved" : 1 })
+
+> db.school.find().pretty()
+{
+	"_id" : ObjectId("61fa864aa4be9e35eddc750a"),
+	"name" : "Kenneth",
+	"school" : "IBA",
+	"class" : "dkpbw21a2"
+}
+{
+	"_id" : ObjectId("61fa86efa4be9e35eddc750b"),
+	"name" : "Mikkel",
+	"school" : "IBA",
+	"class" : "dkpbw21a2"
+}
+{
+	"_id" : ObjectId("61fa86f4a4be9e35eddc750c"),
+	"name" : "Andrew",
+	"school" : "IBA",
+	"class" : "dkpbw21a2"
+}
+{
+	"_id" : ObjectId("61fa86f8a4be9e35eddc750d"),
+	"name" : "Rene",
+	"school" : "IBA",
+	"class" : "dkpbw21a2"
+}
+{
+	"_id" : ObjectId("61fa8700a4be9e35eddc750e"),
+	"name" : "Morten",
+	"school" : "IBA",
+	"class" : "dkpbw21a2"
+}
+{
+	"_id" : ObjectId("61fa8706a4be9e35eddc750f"),
+	"name" : "Dennis",
+	"school" : "IBA",
+	"class" : "dkpbw21a2"
+}
+{
+	"_id" : ObjectId("61fa870aa4be9e35eddc7510"),
+	"name" : "Tobias",
+	"school" : "IBA",
+	"class" : "dkpbw21a2"
+}
+{
+	"_id" : ObjectId("61fa870ea4be9e35eddc7511"),
+	"name" : "Freja",
+	"school" : "IBA",
+	"class" : "dkpbw21a2"
+}
+{
+	"_id" : ObjectId("61fa8712a4be9e35eddc7512"),
+	"name" : "Sophie",
+	"school" : "IBA",
+	"class" : "dkpbw21a2"
+}

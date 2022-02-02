@@ -1,0 +1,44 @@
+body{
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    main{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        .container{
+            border: 3px solid black;
+            height: auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            h1{
+                width: 100%;
+                text-align: center;
+            }
+            .temperatures{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                p{
+                    width: 100%;
+                    text-align: center;
+                }
+                .addTemp{
+                    border: 0px;
+                    padding: 10px 25px;
+                    background: rgb(0, 102, 0);
+                    color: white;
+                    font-size: 2em;
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
+}
+

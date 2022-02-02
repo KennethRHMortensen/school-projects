@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset='utf-8'/>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+        <title class='title'></title>
+        <link rel='icon' type='image/svg+xml' href='./favicon.svg'/>
+        <script src='./js/hw00h.js'></script>
+    </head>
+    <body>
+        <h1 class='title'></h1>
+        <p>Upon loading the HTML file in the browser, the browser will look through the files and render them in the following order</p>
+        <ol>
+            <li>The browser reads line #1, stating the html document is written in HTML5</li>
+            <li>The browser reads the &lt;head&gt; tag, and starts rendering each line one by one, checking the metas first</li>
+            <li>First meta is the utf-8, indicating which character encoding is used</li>
+            <li>Second meta gives the browser the knowledge of how to control the page's dimensions and scaling, with the attributes of indicating the width should be the device's screen width, along with an indicated zoom-level by default</li>
+            <li>Next up comes the title of the page, being the name of the page that will be displayed in the page's tab, as well as the browsers tab name at the top</li>
+            <li>The browser now sees a &lt;link&gt; tag, indicating that theres a reference to either a local (in this case online) link that the page will be fetching something from (in this case a favicon, which is the icon displayed at the left of the title of the page)</li>
+            <li>Now we see a script tag, which indicates that theres a script needed to run this pages content properly, with a source of its origin. Script tags are used to load script files, such as JS, where link tags are used to link local or online style sheets or frameworks etc.</li>
+        </ol>
+        <br><br>
+        <p>Now that the &lt;head&gt; tag has been rendered, the browser will move on to the body tag, which is where all the visible content on the page will be visible for the user</p>
+        <ol>
+            <li>Here we see a &lt;h1&gt; tag, meaning it will contain the most important heading tag, as we have heading tags categorizing from 1-6. The &lt;h1&gt; tag has been given an attribute, a class, which makes it accesable from other accompanying files like js or css for editing beyond its origin, in this case its class is used for a javascript.</li>
+        </ol>
+        <br><br>
+        <h2>The javascript file, and what it does</h2>
+        <p>Here we will go through what the JS file does</p>
+        <ol>
+            <li>First of we see the expression 'use strict', indicating that the code should be executed in strict mode</li>
+            <li>next, we have a variable defined as a 'const', meaning that it can't be changed further on by redefining the variable later on. In this variable, "go" is defined as being a function, which will be triggered later on in the event listener</li>
+            <li>Within the function "go", we see another variable, defined as let (meaning this can be redefined further on), which is names "targets". This variable makes the browser search through the entire document, for an attribute class with a name of 'title', which is the &lt;h1&gt; text from the html file. This means that from now on, we can access the &lt;h1&gt; by writing "target" in our js code.</li>
+            <li>next up we see a loop method, defined with a "for" definition. The "for" loop, loops through its code, a number of times. Within this loop, the index at where it should begin, is indicated by defining its first index as "0", meaning the content is a 0-based index. Next within the loop, its written that as long as the index is less than the entire length of our variable "targets", it will continously add 1 to the index, meaning the loop won't stop until the targets length is smaller than the index, which in this case is never.</li>
+            <li>Now we see that the targets innerHTML, is changed by force through the power of JS, into "Hello, World", meaning it will overwrite the inner html's text, with whatever is written within the JS file, upon rendering this javascript</li>
+            <li>Now that the function has been defined and written, it is time to render the function. This is done by adding an eventlistener to the browsers window, meaning the browser will listen for an event, and once this has been found, it will load the function named 'go'. This means, that once the browser window is rendered, it will render the function "go", which will change the content of &lt;h1&gt;. This could also be linked to a button, so that the content wouldn't change until a button had been added to the HTML, and upon clicking this, it would change the content...</li>
+        </ol>
+
+    </body>
+</html>

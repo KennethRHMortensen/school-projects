@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+    <html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel="stylesheet" href="style.css">
+    <title>35.7.2. Assignment DE.SVG.1</title>
+</head>
+<body>
+    
+    <main>
+        <h1>Documentation</h1>
+        <div class="info">
+            <div class="question">
+                <h2>What is a viewbox?</h2>
+                <p>The viewBox is similar to the viewport, but you can also use it to “pan” and “zoom” like a telescope.
+                </br>
+                viewBox got 4 attributes, with the first two being control of its "panning", and the last two being control of its "zoom":
+                <ul>
+                    <li>min-x</li>
+                    <li>min-y</li>
+                    <li>width</li>
+                    <li>height</li>
+                </ul>
+                </p>
+            </div>
+            <div class="question">
+                <h2>What is a viewport?</h2>
+                <p>The viewport is like a window you look through to see an SVG’s content, basically it creates a “port” through which you can “view” a section of an SVG.
+                    <br>
+                    you can control the viewport via width and height parameters on the svg element.
+                    <br>
+                    For example, you might have a shape in your graphic that is 100px by 100px, but if you set the SVG viewport to 50px by 50px you’ll only see a portion of that shape.
+                </p>
+            </div>
+            <div class="question">
+                <h2>How do they relate to each other?</h2>
+                <p>The viewBox is similar to the viewport, but you can also use it to “pan” and “zoom” like a telescope.
+                    <br>
+                    This means that if the value of width and height of the viewport is less than the last two attribute values of the viewBox, it will zoom out and make the object drawn smaller within the viewBox.
+                    <br>
+                    Same goes the opposite way if viewBox last two values are smaller than the viewports width and height, it will zoom in on the drawn object, meaning you might won't see its full size.
+                </p>
+            </div>
+            <div class="question">
+                <h2>How to scale an SVG drawing's appearance on a web page?</h2>
+                <p>By adding a viewBox to its attributes, this way it will scale perfectly to fit within what ever size you give the container that contains the svg. 
+                    <br>
+                    By default it will not be stretched or distorted if you give it dimensions that doesn't match its aspect ratio. Instead, the scale will be adjusted in order to preserve the aspect ratio defined in the code.
+                </p>
+            </div>
+            <div class="articles">
+                <a href="https://webdesign.tutsplus.com/tutorials/svg-viewport-and-viewbox-for-beginners--cms-30844">Understanding viewPort and viewBox</a>
+                <br>
+                <a href="https://css-tricks.com/scale-svg/">how to scale an SVG</a>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,144 @@
+* {
+  margin: 0 auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+li {
+  font-size: 1.2em;
+}
+
+body {
+  margin: 0 auto;
+}
+
+body header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100%;
+  height: 100px;
+}
+
+body header .nav-container {
+  width: 100%;
+  background: #00ccff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .nav-container .nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body header .nav-container .nav ul li > a {
+  color: black;
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding-left: 50px;
+}
+
+body header .nav-container .nav ul li > a:hover {
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  color: white;
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
+}
+
+body main h1 {
+  margin: 50px;
+  min-width: 100%;
+  text-align: center;
+}
+
+body main .image-container {
+  border: 8px solid #00ccff;
+  max-width: 1280px;
+  height: 640px;
+}
+
+body main .image-container img {
+  max-width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body main .text-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body main .text-container h2 {
+  margin: 25px;
+  width: 100%;
+  text-align: center;
+}
+
+body main .text-container ul {
+  width: 100%;
+}
+
+body main .text-container ul li {
+  max-width: 70%;
+  line-height: 30px;
+}
+
+body main .text-container ul :last-child {
+  margin-bottom: 100px;
+}
+
+body main .text-container .revealSecret {
+  border: 0px;
+  font-size: 1.5em;
+  padding: 10px 30px;
+  background: #00ccff;
+  color: white;
+  margin-top: 30px;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+}
+
+body main .text-container .revealSecret:hover {
+  background: #00abd6;
+  border: 2px solid black;
+}
+/*# sourceMappingURL=style.css.map */

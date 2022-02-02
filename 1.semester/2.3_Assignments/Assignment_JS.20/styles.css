@@ -1,0 +1,77 @@
+body {
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main {
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .container {
+  border: 3px solid black;
+  height: auto;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+body main .container:last-child {
+  margin-top: 50px;
+}
+
+body main .container h1 {
+  width: 100%;
+  text-align: center;
+}
+
+body main .container .year, body main .container .cpr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .container .year p, body main .container .cpr p {
+  width: 100%;
+  text-align: center;
+}
+
+body main .container .year .addYear, body main .container .year .checkCpr, body main .container .cpr .addYear, body main .container .cpr .checkCpr {
+  border: 0px;
+  padding: 10px 25px;
+  background: #006600;
+  color: white;
+  font-size: 2em;
+  margin-top: 50px;
+}
+/*# sourceMappingURL=styles.css.map */
